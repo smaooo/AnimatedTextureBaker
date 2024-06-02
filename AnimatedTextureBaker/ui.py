@@ -19,7 +19,9 @@ class AnimatedTextureBaker_PT_UI(Panel):
         layout.prop(context.scene.animated_texture_baker, "indirect_light_contrib")
         layout.prop(context.scene.animated_texture_baker, "color_contrib")
 
-        print("UI Drawn")     
+        layout.operator("animated_texture_baker.bake", text="Bake")
+        
+
 
 def register():
     bpy.utils.register_class(AnimatedTextureBaker_PT_UI)
