@@ -7,15 +7,19 @@ class AnimatedTextureBakerProperties(PropertyGroup):
     bake_type: bpy.props.EnumProperty(
         name="Bake Type",
         items=[
-            ("DIFFUSE", "Diffuse", "Bake Diffuse Color"),
-            ("EMISSION", "Emission", "Bake Emission Color"),
-            ("NORMAL", "Normal", "Bake Normal Map"),
-            ("ROUGHNESS", "Roughness", "Bake Roughness Map"),
-            ("METALLIC", "Metallic", "Bake Metallic Map"),
-            ("AO", "Ambient Occlusion", "Bake Ambient Occlusion Map"),
-            ("ALPHA", "Alpha", "Bake Alpha Map"),
-            ("SPECULAR", "Specular", "Bake Specular Map"),
-            ("TRANSMISSION", "Transmission", "Bake Transmission Map")]
+            ("COMBINED", "Combined", "Combined"),
+            ("AO", "Ambient Occlusion", "Ambient Occlusion"),
+            ("SHADOW", "Shadow", "Shadow"),
+            ("POSITION", "Position", "Position"),
+            ("NORMAL", "Normal", "Normal"),
+            ("UV", "UV", "UV"),
+            ("ROUGHNESS", "Roughness", "Roughness"),
+            ("EMIT", "Emission", "Emission"),
+            ("ENVIRONMENT", "Environment", "Environment"),
+            ("DIFFUSE", "Diffuse", "Diffuse"),
+            ("GLOSSY", "Glossy", "Glossy"),
+            ("TRANSMISSION", "Transmission", "Transmission")
+        ]
     )   
     texture_size: bpy.props.IntVectorProperty(
         name="Texture Size",
